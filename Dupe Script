@@ -1,0 +1,8 @@
+local args = {
+    [1] = "HUD",
+    [2] = "Inventory",
+    [3] = "Drop",
+    [4] = "Wipe Potion", -- item name
+    [5] = -1/0
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Sync"):InvokeServer(unpack(args))
